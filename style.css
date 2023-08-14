@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;/* view port height 1vh = 19.2px*/
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 100px;
+    align-items: center; /* veritically center */
+}
+.logo{
+    width: 120px;
+}
+.listitem{
+    display: inline-block; /* display one line */
+    list-style: none; 
+    margin: 10px 20px;
+}
+.link{
+    color: black;
+    text-decoration: none; 
+    font-weight: bold;
+}
+.link:hover{
+    color: red;
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.head1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.Se{
+    color: tomato;
+}
+.DOWNLOAD{
+text-decoration: none;
+background-color: black;
+color: aliceblue;
+padding: 10px 20px;
+margin: 30px 0px;
+display: inline-flex;
+border-radius: 10px;
+font-weight: bold;
+
+}
+.images{
+    height: 80%;
+    width: 45%;
+    position: absolute;
+    right: 30px;
+   bottom: 0px;
+}
+.images img{
+position: absolute;
+height: 100%;
+left: 50%;
+bottom: 0px;
+transform: translateX(-50%);
+transition: bottom 0.5s,left 1s;
+}
+
+.images:hover #girl{
+ bottom: 70px;
+}
+.images:hover #shape{
+    left: 40%;
+   }
+
+   #about{
+    margin: 14% 8% 0px 8%;
+    margin-top: 300px;
+   }
+   .about-image{
+    margin-left: 20px
+   }
+   .heading{
+    text-align: center;
+   }
+   .heading h2{
+    font-size: 30px;
+   }
+   .heading span{
+    font-size: 20px;
+    color:darkorange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   .about-content{
+    margin-top: 2rem;/* 1rem = 16px*/
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem;
+   }
+   .about-image img /*decended selector */
+   {
+    width: 80%;
+    border-radius: 1rem;
+   }
+   .about-details{
+    font-size: 19px;
+    font-weight: 400;  /* bold */
+    text-align: justify; /*starting and ending same */
+   }
+   .information{
+    margin-top: 1rem;
+   }
+   .info-box{
+    margin-bottom: 1rem;
+   }
+   .info-box span{
+    margin-left: 1rem;
+   }
+   #skills{
+    margin: 8% 8% 0px 8%;
+   }
+   .skill-content{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+   }
+   .skill-image img{
+    width: 90%;
+    padding-left: 4rem;
+   }
+   html{
+   scroll-behavior: smooth; /* for smooth scroll for the navigation bar  */
+   }
+   .bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin: 1rem;
+    position: relative;
+   }
+   .bar-container h3,span{
+    font-size: 1,2rem;
+    font-weight: 400;
+   }
+  .base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  .html-bar{
+    background-color: rgb(255, 153, 0);
+    width: 95%;
+  }
+  .CSS-bar
+  {
+    background-color: rgb(255, 153, 0);
+    width: 88%;
+  }
+  .React-bar
+  {
+    background-color: rgb(255, 153, 0);
+    width: 89%;
+  }
+  .JS-bar
+  {
+    background-color: rgb(255, 153, 0);
+    width: 85%;
+  }
+  .heading{
+    margin: 8% 8% 0px 8%;
+  }
+  .icon-set{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center; /* horizondally center */
+    align-items: center; /* vertically center */
+  }
+  .icon , .up-arrow{
+    width: 50px;
+    height: 50px;
+    display: flex;
+   /*  for centering the object */
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%;
+   /*  border: 1px solid; */
+    margin: 0px 10px;
+  }
+  .icon i{
+    /* icon sizeing */
+    font-size: 30px;
+    color: rgb(12, 35, 86);
+
+  }
+.icon:hover{
+    background-image: linear-gradient(to bottom right, rgb(255, 191, 0),rgb(217, 255, 0));
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s infinite;
+}
+/* key frames w3 schools */
+@keyframes shake {
+  10%{
+    transform: rotate(15deg);
+  }
+  20%{
+    transform: rotate(-15deg);
+  }
+  40%{
+    transform: rotate(15deg);
+  }
+  60%{
+    transform: rotate(-15deg);
+  }
+}
+#p{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100%;
+  color:rgb(12, 35, 86);
+}
+.up-arrow{
+  margin-left: 95%;
+  margin-top: -1%;
+  background-image: linear-gradient(to bottom right, rgb(255, 191, 0),rgb(217, 255, 0));
+}
+.up-arrow:hover i{
+  color: white;
+}
